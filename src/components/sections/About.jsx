@@ -5,8 +5,9 @@ import RevealOnScroll from '../RevealOnScroll';
 
 const About = () => {
   const frontendSkills = ['HTML', 'CSS', 'JavaScript', 'React', 'Next.js', 'Bootstrap', 'Tailwind CSS', 'WordPress', 'Elementor'];
-  const backendSkills = ['Node.js', 'Express', 'Prisma', 'PostgreSQL', 'MongoDB'];
-  const tools = ['Git', 'GitHub', 'VS Code', 'Postman', 'Figma'];
+  const backendSkills = ['Node.js', 'Express', 'Prisma', 'PostgreSQL', 'MySQL'];
+  const design_tools = ['Figma', 'Adobe Photoshop', 'Adobe XD', 'Adobe Illustrator'];
+  const tools = ['Git', 'GitHub', 'VS Code', 'Postman'];
   const softSkills = ['Problem Solving', 'Communication', 'Team Collaboration', 'Adaptability', 'Time Management'];
   return (
     <section id='about' className="min-h-screen items-center justify-center py-20!">
@@ -39,7 +40,17 @@ const About = () => {
                 </div>
               </div>
               <div className="rounded-xl p-6! hover:-translate-y-1 transition-all">
-                <h3 className='text-xl font-bold mb-4!'>Tools</h3>
+                <h3 className='text-xl font-semibold mb-4!'>Tools</h3>
+                <div className="flex flex-wrap gap-2">
+                  {design_tools.map((item, index) => (
+                    <span key={index} className='bg-blue-500/10 text-blue-500 py-1! px-3! rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2xp_8px_rgba(59,130,246,0.2)] transition-all'>
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="rounded-xl p-6! hover:-translate-y-1 transition-all">
+                <h3 className='text-xl font-bold mb-4!'>Design Tools</h3>
                 <div className="flex flex-wrap gap-2">
                   {tools.map((item, index) => (
                     <span key={index} className='bg-blue-500/10 text-blue-500 py-1! px-3! rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2xp_8px_rgba(59,130,246,0.2)] transition-all'>
@@ -77,15 +88,15 @@ const About = () => {
                 <div className='space-y-4! text-gray-300 mt-2!'>
                   <div>
                     <h4 className='font-semibold'>Front-End Developer at Yes Web Design Studio Co., Ltd. (Oct 2024 – Dec 2024)</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, nam.</p>
+                    <p>Developed and customized responsive websites using HTML5, CSS3, JavaScript, and WordPress (Elementor). Collaborated with UX/UI and Backend teams to deliver pixel-perfect, SEO-optimized websites. Delivered 10+ client websites with improved performance, SEO rankings, and user experience.</p>
                   </div>
                   <div>
                     <h4 className='font-semibold'>Front-End Developer at AUN Thai Laboratories Co., Ltd. (Mar 2013 – May 2024)</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, nam.</p>
+                    <p>Developed and maintained 50+ SEO-optimized, responsive websites using HTML5, CSS3, JavaScript, and WordPress. Collaborated with UX/UI, Backend, SEO teams, and Tokyo HQ to deliver high-quality templates, improve performance, and ensure long-term site stability and consistency.</p>
                   </div>
                   <div>
                     <h4 className='font-semibold'>Web Master / HTML-CSS Coder at ISSUE DESIGN CORPORATION Co., Ltd. (Aug 2009 – Jun 2012)</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, nam.</p>
+                    <p>Converted design layouts into HTML/CSS web templates, supported CMS integration, website maintenance, and hosting operations. Ensured stable performance and quality delivery for 20+ client websites.</p>
                   </div>
                 </div>
               </div>
